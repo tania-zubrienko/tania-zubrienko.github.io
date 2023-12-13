@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    margin-top: 3vh;
+}
+
+.navlink {
+    margin-right: 1.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.homeLink {
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+
+.navlink:hover,
+.homeLink:hover {
+    text-shadow: 2px 2px 2px rgb(242, 56, 140, 1)
+}
+
+.burger {
+    position: absolute;
+    right: 5vw;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
+.dropdown h1 {
+    margin: 0;
+}
+
+
+.Navigation {
+    margin: 5vh 5vw 5vw;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
