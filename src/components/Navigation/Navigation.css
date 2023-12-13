@@ -17,7 +17,7 @@
 
 .navlink:hover,
 .homeLink:hover {
-    text-shadow: 2px 2px 2px rgb(242, 56, 140, 1)
+    text-shadow: 2px 2px 2px rgb(54, 33, 191)
 }
 
 .burger {
@@ -37,7 +37,8 @@
 
 
 .Navigation {
-    margin: 5vh 5vw 5vw;
+    margin: 5vh 5vw;
+    width: 90vw;
 }
 
 @keyframes spin {

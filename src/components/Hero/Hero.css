@@ -1,0 +1,23 @@
+.Hero h1 {
+    font-weight: 700;
+}
+
+.textBlock {
+    padding-left: 10vw;
+    margin-top: 5vh;
+}
+
+.textBlock h2 {
+    margin-bottom: 5vh;
+}
+
+.textBlock h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.Hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

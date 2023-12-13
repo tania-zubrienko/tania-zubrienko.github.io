@@ -3,10 +3,10 @@
 @import 'tailwindcss/utilities';
 
 * {
-  background-color: #030226;
+  background-color: #020212;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
-  color: rgb(242, 56, 140)
+  color: #28d874
 }
 
 /* Color Theme Swatches in Hex
