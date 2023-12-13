@@ -3,7 +3,7 @@
 }
 
 .textBlock {
-    padding-left: 10vw;
+    padding-left: 5vw;
     margin-top: 5vh;
 }
 
@@ -20,4 +20,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.buttons button {
+    min-width: 300px;
+    height: 8vh;
+    margin-right: 3vw;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 30px;
+    margin-top: 3vh;
+    padding: 5px
+}
+
+.buttons {
+    padding-left: 5vw;
 }

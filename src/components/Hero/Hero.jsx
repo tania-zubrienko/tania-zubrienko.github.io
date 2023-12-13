@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css'
 import { Player } from '@lottiefiles/react-lottie-player';
 const Hero = () => {
@@ -6,10 +7,24 @@ const Hero = () => {
         <div className='Hero'>
             <div className="mt-20 text-center md:text-left" >
                 <h1 className='text-4xl md:text-6xl'> &lt; Hello, World!/&gt; </h1>
-                <div className="text-2xl md:text-3xl textBlock">
+                <section className="text-2xl md:text-3xl textBlock mb-5">
                     <h2>I am Tania</h2>
                     <h1>Full Stack Developer</h1>
-                </div>
+                </section>
+                <section className='buttons mt-10 flex flex-col lg:flex-row items-center lg:grid lg:grid-cols-2'>
+                    <Link to={'/about'}>
+                        <button type="button"
+                            className="min-h-36 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+                            My CV
+                        </button>
+                    </Link>
+                    <Link to={'/contact'}>
+                        <button type="button"
+                            className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+                            Do you have a project?
+                        </button>
+                    </Link>
+                </section>
             </div >
             <div className="animation invisible md:visible">
                 <Player

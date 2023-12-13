@@ -6,7 +6,8 @@
   background-color: #020212;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
-  color: #28d874
+  color: #28d874;
+  margin: 0 1vw;
 }
 
 /* Color Theme Swatches in Hex
