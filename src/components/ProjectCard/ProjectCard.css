@@ -1,0 +1,9 @@
+.layout {
+    border: 1px red solid;
+    height: 20vh;
+}
+
+.description {
+    border: 1px rgb(0, 255, 115) solid;
+    height: 20vh;
+}

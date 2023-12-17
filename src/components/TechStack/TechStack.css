@@ -1,0 +1,12 @@
+.TechStack h5 {
+    border: 1px #28d87466 solid;
+    margin: 0.5em;
+    line-height: 3em;
+    border-radius: 2em;
+    min-width: 115px;
+}
+
+.TechStack {
+
+    margin: 2em;
+}

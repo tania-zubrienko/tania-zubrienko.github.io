@@ -26,7 +26,7 @@ const Hero = () => {
                     </Link>
                 </section>
             </div >
-            <div className="animation invisible md:visible">
+            <div className="animation hidden md:block">
                 <Player
                     autoplay
                     loop

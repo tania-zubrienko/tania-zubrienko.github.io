@@ -1,12 +1,13 @@
+import Footer from "../../components/Footer/Footer"
 import Hero from "../../components/Hero/Hero"
-import TechStack from "../../components/TechStack/TechStack"
-
+import LastProjects from "../../components/LastProjects/LastProjects"
 const HomePage = () => {
 
     return (
         <div className="HomePage">
             <Hero />
-            <TechStack />
+            <LastProjects />
+            <Footer />
         </div>
     )
 }

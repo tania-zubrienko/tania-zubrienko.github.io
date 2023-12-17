@@ -9,14 +9,15 @@ const Navigation = () => {
 
     useState(() => { }, [visible])
     return (
-        <div className="Navigation flex justify-between" >
+        <div className="Navigation grid grid-cols-4 md:grid-cols-2 items-center" >
             <Link to={'/'} className=' homeLink hover:text-cyan-500'>Tania Zubrienko</Link>
-            <section className="flex invisible md:visible">
+            <section className="flex invisible md:visible justify-end">
                 <Link to={'/about'}><h1 className='navlink hover:text-cyan-500'>About</h1></Link>
                 <Link to={'/projects'}><h1 className=' navlink hover:text-cyan-500'>Projects</h1></Link>
                 <Link to={'/contact'}><h1 className=' navlink hover:text-cyan-500'>Contact</h1></Link>
             </section>
-            <section className="visible md:hidden burger">
+
+            <section className="visible md:hidden burger ">
                 <button onClick={() => setVisible(!visible)} >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
                         className="hover:animate-bounce w-9 h-9 ">
@@ -29,6 +30,7 @@ const Navigation = () => {
                     </div>
                 </button>
             </section>
+
         </div>
     )
 }
