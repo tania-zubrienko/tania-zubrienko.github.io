@@ -1,9 +1,13 @@
 .layout {
-    border: 1px red solid;
-    height: 20vh;
+    border-radius: 30px !important;
 }
 
-.description {
-    border: 1px rgb(0, 255, 115) solid;
-    height: 20vh;
+.description {}
+
+.ProjectCard {
+    padding: 0 5em;
+}
+
+.ProjectCard h1 {
+    font-size: 2em !important;
 }

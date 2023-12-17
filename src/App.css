@@ -7,14 +7,18 @@
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: #28d874;
-  margin: 0 1vw;
+
 }
 
-html,
-body {
-  margin: 0 !important;
-  padding: 0 !important;
+.App {
+  min-height: 100vh;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
 }
+
+
 
 /* Color Theme Swatches in Hex
 
