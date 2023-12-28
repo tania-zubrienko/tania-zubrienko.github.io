@@ -1,0 +1,24 @@
+.PopUp {
+    width: 40vw;
+    height: 40vh;
+    background-color: #110559;
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+    border-radius: 40px;
+}
+
+.infoBlock {
+    background-color: #110559;
+
+}
+
+.infoBlock * {
+    margin-bottom: 10px;
+    background-color: #110559;
+    font-size: larger;
+}
+
+.button {
+    margin-top: 20px;
+}
