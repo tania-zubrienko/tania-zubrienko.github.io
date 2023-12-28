@@ -1,5 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './ContactForm.css'
+import sendMail from '../../services/mail.services'
+import mailService from '../../services/mail.services'
+import PopUp from '../PopUp/PopUp'
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -14,6 +17,8 @@ const ContactForm = () => {
         message: '',
     })
 
+    const [state, setState] = useState(false)
+    useEffect(() => { }, [state])
     const handleChange = (e) => {
         const { name, value } = e.target
         setFormData((prevData) => ({ ...prevData, [name]: value }))
@@ -55,7 +60,13 @@ const ContactForm = () => {
         e.preventDefault()
 
         if (validateForm()) {
-            console.log('Form submitted:', formData)
+            mailService.sendMail(formData)
+            setFormData({
+                name: '',
+                email: '',
+                message: '',
+            })
+            setState(true)
         } else {
             console.log('Form validation failed')
         }
@@ -117,6 +128,8 @@ const ContactForm = () => {
                     </button>
                 </div>
             </form >
+            {state && <PopUp close={setState} />}
+
         </div >
     )
 }

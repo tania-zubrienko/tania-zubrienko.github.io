@@ -1,0 +1,50 @@
+.profilePic {
+    margin: auto;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.journey {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.journey h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.AboutPage {
+    padding: 3vh 7vw;
+}
+
+.technology {
+    display: flex;
+    height: 200px;
+    padding: 0 2em;
+    align-items: center;
+}
+
+.technology h1 {
+    width: 50px;
+}
+
+.description {
+    margin-bottom: 3em;
+}
+
+.expertise {
+    margin-top: 1em;
+}
+
+.text {
+    margin-left: 2em;
+}
+
+.text h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
