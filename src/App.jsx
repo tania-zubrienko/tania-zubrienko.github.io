@@ -11,7 +11,7 @@ import SingleProject from './pages/SingleProject/SingleProject'
 function App() {
 
   return (
-    <div className="App  mr-2">
+    <div className="App  mr-2 max-w-screen-lg">
       <Navigation />
       <Routes>
         <Route path='/' element={<HomePage />} />
