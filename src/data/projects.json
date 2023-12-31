@@ -13,6 +13,10 @@
             "MongoDB"
         ],
         "url": "https://walk-my-dog.fly.dev/",
+        "snapshots": [
+            "wmd",
+            "easytrip"
+        ],
         "github": [
             "https://github.com/tania-zubrienko/walk-my-dog"
         ]
