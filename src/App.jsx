@@ -6,18 +6,19 @@ import ProjectsPage from './pages/ProjectsPage/ProjectsPage'
 import Footer from './components/Footer/Footer'
 import ContactForm from './components/ContactForm/ContactForm'
 import AboutPage from './pages/AboutPage'
+import SingleProject from './pages/SingleProject/SingleProject'
 
 function App() {
 
   return (
-    <div className="App  mr-2">
+    <div className="App  mr-2 max-w-screen-lg">
       <Navigation />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path='/contact' element={<ContactForm />} />
-        <Route path='/projects/:id' element={<h1>Aqui va a haber descripcion</h1>} />
+        <Route path='/projects/:id' element={<SingleProject />} />
 
       </Routes>
       <Footer />
