@@ -5,3 +5,30 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.description > *{
+    margin: 1em 0;
+}
+.description h1{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.links >*{
+    display: block;
+    margin-bottom: 1em;
+}
+.prev{
+background-image: url('/src/assets/left.png');
+}
+
+.next{
+    background-image: url('/src/assets/right.png');
+    }
+
+.prev, .next{
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}

@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router-dom"
 import data from '../../data/projects.json'
 import { useEffect, useState } from "react"
-
 import './SingleProject.css'
+
 const SingleProject = () => {
     const { id } = useParams()
 
@@ -36,23 +36,21 @@ const SingleProject = () => {
                 <div className="max-w-screen-lg mx-auto">
 
                     <div id="carousel" className="carousel flex">
-                        <button className="prev" value="prev" onClick={setImage}>prev</button>
+                        <button className="prev" value="prev" onClick={setImage}><div className="prev"/></button>
                         <div className="carousel-inner">
                             <div id="slide" className="carousel" style={{ backgroundImage: `url("/src/assets/${project.snapshots[currentImg]}.png")` }}></div>
                         </div>
-                        <button className="next" value="next" onClick={setImage}>btn</button>
+                        <button className="next" value="next" onClick={setImage}><div className="next"></div></button>
                     </div>
 
                     <div className="description">
-                        <h1>{project.name}</h1>
-                        <br />
+                        <h1 >{project.name}</h1>
                         <p>{project.description}</p>
-                        <hr />
                         {project.tecnologies.map((e, i) => <span key={i}>{e} - </span>)}
-                        <br />
-                        <Link to={project.github}>Link to repo</Link>
-                        <br />
-                        <Link to={project.url}>{project.url}</Link>
+                        <section className="links">
+                            <Link to={project.github} className="hover:text-cyan-500 hover:underline hover:underline-offset-4">Link to repo</Link>
+                            <Link to={project.url} className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >{project.url}</Link>
+                        </section>
                     </div>
 
                 </div>

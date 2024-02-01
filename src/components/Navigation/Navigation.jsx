@@ -14,7 +14,7 @@ const Navigation = () => {
             <section className="flex invisible md:visible justify-end">
                 <Link to={'/about'}><h1 className='navlink hover:text-cyan-500 hover:animate-bounce '>About</h1></Link>
                 <Link to={'/projects'}><h1 className=' navlink hover:text-cyan-500 hover:animate-bounce '>Projects</h1></Link>
-                <Link to={'/contact'}><h1 className=' navlink :text-cyan-500 hover:animate-bounce '>Contact</h1></Link>
+                <Link to={'/contact'}><h1 className=' navlink hover:text-cyan-500 hover:animate-bounce '>Contact</h1></Link>
             </section>
 
             <section className="visible md:hidden burger ">
