@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import './ProjectCard.css'
 
-const ProjectCard = ({ projejct }) => {
-    const { name, description, image, tecnologies, url, github, id } = projejct
+const ProjectCard = ({ project }) => {
+    const { name, description, image, tecnologies, url, github, id } = project
 
     return (
         <div className="ProjectCard grid gap-20 grid-cols-1 md:grid-cols-2 items-center">

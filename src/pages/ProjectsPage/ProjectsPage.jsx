@@ -7,7 +7,7 @@ const ProjectsPage = () => {
     return (
         <div className="ProjectsPage">
             <div className="grid gap-20 grid-cols-1">
-                {projects.map(e => <ProjectCard projejct={e} key={e.id} />)}
+                {projects.map(e => <ProjectCard project={e} key={e.id} />)}
             </div>
         </div>
     )

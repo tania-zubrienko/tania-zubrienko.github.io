@@ -8,7 +8,7 @@ const LastProjects = () => {
             <hr />
             <h1 className='text-center'>My latest works</h1>
 
-            {projects.map(e => <ProjectCard projejct={e} key={e.id} />)}
+            {projects.map(e => <ProjectCard project={e} key={e.id} />)}
         </div>
     )
 }
