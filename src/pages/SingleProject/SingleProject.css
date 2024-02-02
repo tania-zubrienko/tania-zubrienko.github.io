@@ -1,34 +1,43 @@
 .carousel {
-    width: 70vw;
+    width: 80vw;
     height: 40vh;
+    justify-content: space-between;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    align-items: center;
 }
 
-.description > *{
+.description>* {
     margin: 1em 0;
 }
-.description h1{
+
+.description h1 {
     font-size: 2em;
     font-weight: 700;
 }
 
-.links >*{
+.links>* {
     display: block;
     margin-bottom: 1em;
 }
-.prev{
-background-image: url('/src/assets/left.png');
+
+.prev {
+    background-image: url('/src/assets/left.png');
 }
 
-.next{
+.next {
     background-image: url('/src/assets/right.png');
-    }
+}
 
-.prev, .next{
-    background-size:contain;
+.prev,
+.next {
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.ProjectPage {
+    padding: 0 20px;
 }

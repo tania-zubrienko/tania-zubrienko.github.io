@@ -106,7 +106,7 @@ const ContactForm = () => {
                     </div>
                 </div >
                 <div className="mb-6">
-                    <label htmlFor="name">Leva me a message</label>
+                    <label htmlFor="name">Leave me a message</label>
                     <textarea
                         className="w-full p-2 border border-gray-300 rounded"
                         id="message"

@@ -12,7 +12,7 @@
             "Handlebars.js",
             "MongoDB"
         ],
-        "url": "https://walk-my-dog.fly.dev/",
+        "url": "Not deployed yet",
         "snapshots": [
             "wmd",
             "easytrip",
@@ -36,6 +36,11 @@
             "MongoDB"
         ],
         "url": "Not deployed yet",
+        "snapshots": [
+            "wmd",
+            "easytrip",
+            "wmd"
+        ],
         "github": [
             "https://github.com/tania-zubrienko/Trip-planner-front",
             "https://github.com/tania-zubrienko/Trip-Planner-back"
