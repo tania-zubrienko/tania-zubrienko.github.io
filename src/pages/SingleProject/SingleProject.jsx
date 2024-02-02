@@ -51,7 +51,7 @@ const SingleProject = () => {
                             {project.github.map((e, i) => {
                                 return (
                                     < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >
-                                        Link to repo {i + 1}
+                                        Link to repo
                                     </Link>)
                             })}
                             {project.url == "Not deployed yet"

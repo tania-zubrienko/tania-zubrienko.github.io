@@ -1,9 +1,9 @@
-input {
-    margin-top: 10px !important;
-}
-
 label {
     font-size: 1.2em;
+}
+
+input {
+    margin-top: 2em;
 }
 
 .ContactForm {

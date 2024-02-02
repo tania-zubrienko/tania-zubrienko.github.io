@@ -1,21 +1,21 @@
 .PopUp {
-    width: 40vw;
+    /* width: 80vw; */
     height: 40vh;
     background-color: #110559;
     position: fixed;
-    top: 20vh;
-    left: 30vw;
+    top: 30vh;
+    /* left: 13vw; */
     border-radius: 40px;
 }
 
 .infoBlock {
-    background-color: #110559;
+    background-color: transparent;
 
 }
 
 .infoBlock * {
     margin-bottom: 10px;
-    background-color: #110559;
+    background-color: transparent;
     font-size: larger;
 }
 
