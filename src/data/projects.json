@@ -14,8 +14,6 @@
         ],
         "url": "Not deployed yet",
         "snapshots": [
-            "wmd",
-            "easytrip",
             "wmd"
         ],
         "github": [
@@ -37,9 +35,7 @@
         ],
         "url": "Not deployed yet",
         "snapshots": [
-            "wmd",
-            "easytrip",
-            "wmd"
+            "easytrip"
         ],
         "github": [
             "https://github.com/tania-zubrienko/Trip-planner-front",
