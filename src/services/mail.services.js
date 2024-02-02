@@ -9,7 +9,6 @@ class MailService {
     }
 
     sendMail(formData) {
-        console.log("ENTRO EN SERVICIOS")
         return this.api.post('/send', formData)
     }
 }
