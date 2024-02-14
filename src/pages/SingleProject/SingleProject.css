@@ -1,7 +1,7 @@
 .carousel {
     width: 80vw;
     height: fit-content;
-    justify-content: space-around;
+    justify-content: space-between;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,14 +10,12 @@
     margin-right: 1em !important;
 }
 
-.carousel-inner {
-    width: auto;
-    max-height: 55vh;
-}
+
 
 #slide {
     object-fit: contain;
     max-height: 55vh;
+    max-width: 70vw;
     border-radius: 30px;
     margin: 0 .5em;
 }
@@ -39,7 +37,7 @@
 
 #prev {
     background-image: url('/src/assets/left.png');
-
+    margin-right: 1em;
 }
 
 #next {
