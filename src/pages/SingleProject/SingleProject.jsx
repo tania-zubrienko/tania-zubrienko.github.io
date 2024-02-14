@@ -47,7 +47,7 @@ const SingleProject = () => {
                         <section className="links flex ">
                             {project.github.map((e, i) => {
                                 return (
-                                    < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4 repoLink" >
+                                    < Link to={e} target={"_blank"} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4 repoLink" >
                                         ✦   Link to repo <span>{project.github.length > 1 && `${i + 1}`}</span>
                                     </Link>)
                             })}
