@@ -36,15 +36,15 @@ const SingleProject = () => {
 
                     <div id="carousel" className="carousel flex">
                         <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev" /></button>
-                        <div className="carousel-inner">
-                            <img id="slide" src={project.snapshots[currentImg]} />
-                        </div>
-                        <button className="next" value="next" onClick={setImage}><div className="next" id="next"></div></button>
+
+                        <img id="slide" src={project.snapshots[currentImg]} />
+
+                        <button className="next" value="next" onClick={setImage} ><div className="next" id="next" /></button>
                     </div>
 
                     <div className="description text-center md:text-left">
                         <h1>{project.name}</h1>
-                        <section className="links flex">
+                        <section className="links flex ">
                             {project.github.map((e, i) => {
                                 return (
                                     < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4 repoLink" >

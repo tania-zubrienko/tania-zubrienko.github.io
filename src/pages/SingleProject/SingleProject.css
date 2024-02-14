@@ -1,19 +1,25 @@
 .carousel {
-    width: 70vw;
-    height: 50vh;
-    justify-content: space-between;
+    width: 80vw;
+    height: fit-content;
+    justify-content: space-around;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    margin-left: 0 !important;
+    margin-right: 1em !important;
 }
 
-.carousel img {
-    object-fit: cover;
-    height: 55vh;
-    border-radius: 20px;
-    box-shadow: 20px 20px 20px rgb(209, 244, 159, 0.3);
-    margin-bottom: 2em;
+.carousel-inner {
+    width: auto;
+    max-height: 55vh;
+}
+
+#slide {
+    object-fit: contain;
+    max-height: 55vh;
+    border-radius: 30px;
+    margin: 0 .5em;
 }
 
 .description>* {
@@ -31,11 +37,12 @@
 
 }
 
-.prev {
+#prev {
     background-image: url('/src/assets/left.png');
+
 }
 
-.next {
+#next {
     background-image: url('/src/assets/right.png');
 }
 
