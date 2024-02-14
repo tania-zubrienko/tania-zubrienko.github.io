@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
     const { name, description, image, tecnologies, url, github, id } = project
 
     return (
-        <div className="ProjectCard grid md:gap-20  md:grid-cols-2 items-center">
+        <div className="ProjectCard grid md:gap-20 w md:grid-cols-2 items-center">
             < div className={`layout text-center ${id % 2 === 0 && 'md:order-last'}`} >
                 <img className='object-cover h-50 w-50 rounded-lg' src={image} alt={name} />
             </div>
