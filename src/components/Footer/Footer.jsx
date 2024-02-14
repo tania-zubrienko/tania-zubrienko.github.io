@@ -10,8 +10,8 @@ const Footer = () => {
     return (
         <div className="Footer">
             <div className="gap-x-10 flex items-center justify-center ">
-                <Link to={'https://github.com/tania-zubrienko'} className='link'> <FaGithub size={50} /></Link >
-                <Link to={'https://www.linkedin.com/in/tania-zubrienko/'} className='link'><FaLinkedin size={50} /></Link>
+                <Link to={'https://github.com/tania-zubrienko'} className='link'  target={"_blank"}> <FaGithub size={50} /></Link >
+                <Link to={'https://www.linkedin.com/in/tania-zubrienko/'} className='link'  target={"_blank"}><FaLinkedin size={50} /></Link>
                 <Link to={'/contact'}><TbMailFilled size={50} className='link' /></Link>
             </div >
             <TechStack />
