@@ -35,7 +35,7 @@ const SingleProject = () => {
                 <div className="max-w-screen-xl mx-auto">
 
                     <div id="carousel" className="carousel flex">
-                        <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev" /></button>
+                        <button className="prev ml-1" value="prev" onClick={setImage}><div className="prev" id="prev" /></button>
 
                         <img id="slide" src={project.snapshots[currentImg]} />
 
