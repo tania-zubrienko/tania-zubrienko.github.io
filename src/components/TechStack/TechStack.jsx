@@ -3,7 +3,7 @@ import './TechStack.css'
 const TechStack = () => {
 
     return (
-        <div className="TechStack grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 text-center">
+        <div className="TechStack grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 text-center mx-auto" >
             <h6 className='text-xs md:text-base'>JavaScript</h6>
             <h6 className='text-xs md:text-base'>Java</h6>
             <h6 className='text-xs md:text-base'>Node.js</h6>

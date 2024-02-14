@@ -32,7 +32,7 @@ const SingleProject = () => {
     return (
         project ?
             <div className="ProjectPage">
-                <div className="max-w-screen-lg mx-auto">
+                <div className="max-w-screen-xl mx-auto">
 
                     <div id="carousel" className="carousel flex">
                         <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev"/></button>
@@ -42,18 +42,30 @@ const SingleProject = () => {
                         <button className="next" value="next" onClick={setImage}><div className="next" id="next"></div></button>
                     </div>
 
-                    <div className="description">
+                    <div className="description text-center md:text-left">
                         <h1 >{project.name}</h1>
                         <p>{project.description}</p>
                         {project.tecnologies.map((e, i) => <span key={i}>{e} - </span>)}
                         <section className="links">
-                            <Link to={project.github} className="hover:text-cyan-500 hover:underline hover:underline-offset-4">Link to repo</Link>
-                            <Link to={project.url} className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >{project.url}</Link>
+                            {project.github.map((e, i) => {
+                                return (
+                                    < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >
+                                        Link to repo
+                                    </Link>)
+                            })}
+                            {project.url == "Not deployed yet"
+                                ? <p>Not deployed yet</p>
+                                :
+                                <Link to={project.url == "Not deployed yet" ? `/projects/${project.id}` : project.url}
+                                    className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >
+                                    {project.url}
+                                </Link>
+                            }
                         </section>
                     </div>
 
                 </div>
-            </div>
+            </div >
             :
             <h1>LOADING...</h1>
     )
