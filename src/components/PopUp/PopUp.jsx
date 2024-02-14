@@ -1,7 +1,7 @@
 import './PopUp.css'
 const PopUp = ({ close }) => {
     return (
-        <div className="PopUp left-16 sm:inset-x-1/4 w-80 md:w-1/2  flex items-center justify-center">
+        <div className="PopUp left-10 sm:inset-x-1/4 w-80 md:w-1/2  flex items-center justify-center">
             <div className='infoBlock text-center'>
                 <h1>Thank you for your email!</h1>
                 <h5>I will get back to you as soon as possible</h5>
