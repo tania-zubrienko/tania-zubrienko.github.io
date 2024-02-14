@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Walk my dog",
         "description": "The project is a small Minimum Viable Product (MVP) of a solution designed to simplify the lives of pet lovers. It features specific roles for administrators, clients, and pet caregivers, creating a space that facilitates communication between pet owners and caregivers. The platform aims to streamline the process of connecting those in need of pet care services with individuals offering their caregiving services. With designated roles, administrators can oversee the system, clients can easily find and connect with suitable caregivers for their pets, and caregivers can efficiently offer their services to pet owners in need. The ultimate goal is to create a user-friendly environment that enhances the pet care experience for both owners and caregivers.",
-        "image": "wmd",
+        "image": "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822776/Projects/rn4nlshjcjbncrbvh8p5.png",
         "tecnologies": [
             "JavaScript",
             "Node.js",
@@ -14,9 +14,8 @@
         ],
         "url": "https://walk-my-dog.fly.dev/",
         "snapshots": [
-            "wmd",
-            "easytrip",
-            "wmd"
+            "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822776/Projects/rn4nlshjcjbncrbvh8p5.png",
+            "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822755/Projects/oznly0wysqqttldttvfn.png"
         ],
         "github": [
             "https://github.com/tania-zubrienko/walk-my-dog"
@@ -26,7 +25,7 @@
         "id": 2,
         "name": "Easy trip",
         "description": "A web application designed to simplify the organization of trips, taking group travel planning to a whole new level. With a user-centric approach, our platform offers key features to enhance the travel planning experience: access to all necessary documentation, such as identification documents, reservations, itinerary optimization, suggestions for popular sites based on the destination, and management of expense records related to the trip.",
-        "image": "easytrip",
+        "image": "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822755/Projects/oznly0wysqqttldttvfn.png",
         "tecnologies": [
             "JavaScript",
             "Node.js",
@@ -36,6 +35,10 @@
             "MongoDB"
         ],
         "url": "Not deployed yet",
+        "snapshots" : [
+            "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822776/Projects/rn4nlshjcjbncrbvh8p5.png",
+            "https://res.cloudinary.com/dasjwhzur/image/upload/v1707822755/Projects/oznly0wysqqttldttvfn.png"
+        ],
         "github": [
             "https://github.com/tania-zubrienko/Trip-planner-front",
             "https://github.com/tania-zubrienko/Trip-Planner-back"
