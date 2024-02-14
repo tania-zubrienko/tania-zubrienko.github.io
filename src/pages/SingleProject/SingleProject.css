@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.carousel img {
+    object-fit: cover;
+    height: 55vh;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgb(209, 244, 159, 0.3);
+    margin-bottom: 2em;
+}
+
 .description>* {
     margin: 1em 0;
 }
@@ -19,7 +27,8 @@
 
 .links>* {
     display: block;
-    margin-bottom: 1em;
+    margin: 0 2em 1em 0;
+
 }
 
 .prev {
@@ -40,4 +49,9 @@
 
 .ProjectPage {
     padding: 0 20px;
+}
+
+.repoLink {
+    font-weight: 800;
+    font-style: italic;
 }

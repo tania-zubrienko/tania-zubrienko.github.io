@@ -35,27 +35,30 @@ const SingleProject = () => {
                 <div className="max-w-screen-xl mx-auto">
 
                     <div id="carousel" className="carousel flex">
-                        <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev"/></button>
+                        <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev" /></button>
                         <div className="carousel-inner">
-                            <div id="slide" className="carousel" style={{ backgroundImage: `url("${project.snapshots[currentImg]}")` }}></div>
+                            <img id="slide" src={project.snapshots[currentImg]} />
                         </div>
                         <button className="next" value="next" onClick={setImage}><div className="next" id="next"></div></button>
                     </div>
 
                     <div className="description text-center md:text-left">
-                        <h1 >{project.name}</h1>
-                        <p>{project.description}</p>
-                        {project.tecnologies.map((e, i) => <span key={i}>{e} - </span>)}
-                        <section className="links">
+                        <h1>{project.name}</h1>
+                        <section className="links flex">
                             {project.github.map((e, i) => {
                                 return (
-                                    < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >
-                                        Link to repo
+                                    < Link to={e} key={i} className="hover:text-cyan-500 hover:underline hover:underline-offset-4 repoLink" >
+                                        ✦   Link to repo <span>{project.github.length > 1 && `${i + 1}`}</span>
                                     </Link>)
                             })}
-                            {project.url == "Not deployed yet"
-                                ? <p>Not deployed yet</p>
-                                :
+                        </section>
+                        <p>{project.description}</p>
+                        <div className="text-center">
+                            {project.tecnologies.map((e, i) => <span key={i}>{e} {i != project.tecnologies.length - 1 && "-"} </span>)}
+                        </div>
+                        <section className="links">
+                            {project.url != "Not deployed yet"
+                                &&
                                 <Link to={project.url == "Not deployed yet" ? `/projects/${project.id}` : project.url}
                                     className="hover:text-cyan-500 hover:underline hover:underline-offset-4" >
                                     {project.url}
