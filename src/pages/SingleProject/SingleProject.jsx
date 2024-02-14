@@ -38,7 +38,7 @@ const SingleProject = () => {
                     <div id="carousel" className="carousel flex">
                         <button className="prev text-transparent" value="prev" onClick={setImage}>prev</button>
                         <div className="carousel-inner">
-                            <div id="slide" className="carousel" style={{ backgroundImage: `url("/src/assets/${project.snapshots[currentImg]}.png")` }}></div>
+                            <div id="slide" className="carousel" style={{ backgroundImage: `url("${project.snapshots[currentImg]}")` }}></div>
                         </div>
                         <button className="next text-transparent" value="next" onClick={setImage}>next</button>
                     </div>
