@@ -16,17 +16,16 @@ const SingleProject = () => {
     useEffect(() => { }, [currentImg])
 
     function setImage(e) {
-        const { value } = e.target
-
-        if (value === "next") {
+        const { id } = e.target
+        if (id === "next") {
             currentImg < project.snapshots.length - 1 ? setCurrentImg(currentImg + 1) : setCurrentImg(0)
         }
-        if (value === "prev") {
+        if (id === "prev") {
             currentImg <= 0 ? setCurrentImg(project.snapshots.length - 1) : setCurrentImg(currentImg - 1)
         }
 
         const currentSlide = document.getElementById("slide")
-        currentSlide.style.backgroundImage = `url("/src/assets/${project.snapshots[currentImg]}.png")`
+        currentSlide.style.backgroundImage = project.snapshots[currentImg]
     }
 
 
@@ -36,11 +35,11 @@ const SingleProject = () => {
                 <div className="max-w-screen-xl mx-auto">
 
                     <div id="carousel" className="carousel flex">
-                        <button className="prev text-transparent" value="prev" onClick={setImage}>prev</button>
+                        <button className="prev" value="prev" onClick={setImage}><div className="prev" id="prev"/></button>
                         <div className="carousel-inner">
                             <div id="slide" className="carousel" style={{ backgroundImage: `url("${project.snapshots[currentImg]}")` }}></div>
                         </div>
-                        <button className="next text-transparent" value="next" onClick={setImage}>next</button>
+                        <button className="next" value="next" onClick={setImage}><div className="next" id="next"></div></button>
                     </div>
 
                     <div className="description text-center md:text-left">
