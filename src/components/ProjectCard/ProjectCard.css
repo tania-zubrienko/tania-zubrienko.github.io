@@ -2,7 +2,9 @@
     border-radius: 30px !important;
 }
 
-.description {}
+.description {
+    width: auto;
+}
 
 .ProjectCard {
     padding: 0 5em;

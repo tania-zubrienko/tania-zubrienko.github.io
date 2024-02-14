@@ -6,7 +6,7 @@ import projects from '../../data/projects.json'
 const ProjectsPage = () => {
     return (
         <div className="ProjectsPage">
-            <div className="grid gap-20 grid-cols-1">
+            <div className="grid md:gap-20 grid-cols-1">
                 {projects.map(e => <ProjectCard project={e} key={e.id} />)}
             </div>
         </div>
