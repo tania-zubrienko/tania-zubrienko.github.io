@@ -32,7 +32,7 @@ const SingleProject = () => {
     return (
         project ?
             <div className="ProjectPage">
-                <div className="max-w-screen-xl mx-auto">
+                <div className="">
 
                     <div id="carousel" className="carousel flex">
                         <button className="prev ml-1" value="prev" onClick={setImage}><div className="prev" id="prev" /></button>
