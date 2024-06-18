@@ -1,5 +1,5 @@
 import profile from '../assets/profile.jpg'
-import { IoLogoNodejs, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoNodejs, IoLogoJavascript, IoLogoHtml5, IoLogoAngular, IoLogoVue  } from "react-icons/io5";
 import { FaReact, FaJava, FaDatabase } from "react-icons/fa";
 import { SiTypescript, SiMongodb } from "react-icons/si";
 import './AboutPage.css'
@@ -73,6 +73,20 @@ const AboutPage = () => {
                     <div className="text">
                         <h2>ReactJs</h2>
                         <p>Engineering of dynamic and feature-rich user interfaces</p>
+                    </div>
+                </div>
+                <div className="technology">
+                    <h1><IoLogoAngular  size={60} /></h1>
+                    <div className="text">
+                        <h2>AngularJs</h2>
+                        <p>Developing robust and maintainable single-page applications with a comprehensive framework for client-side MVW architecture</p>
+                    </div>
+                </div>
+                <div className="technology">
+                    <h1><IoLogoVue  size={60} /></h1>
+                    <div className="text">
+                        <h2>VueJs</h2>
+                        <p>Building progressive and high-performance user interfaces with a focus on simplicity and flexibility</p>
                     </div>
                 </div>
                 <div className="technology">
